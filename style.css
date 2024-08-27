@@ -1,3 +1,128 @@
-#heading{
-    color:purple
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+    margin: 15px 10px;
+    padding:10px 0 ;
+    height: 100px;
+    /* background: red; */
+}
+.app-logo{
+    padding: 0;
+    height: 100px;
+    width:100px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    border:3px solid black
+    ;border-radius:20px;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ul>li{
+    font-size: 24px;
+    margin:20px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card{
+    height: 400px;
+    width: 300px;
+    background: #fefbfb;
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+
+
+
+.card:hover{
+    border: 2px solid black;
+    scale: .95;
+    cursor: pointer;
+}
+.card-img{
+    width:100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.content-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12px;
+    align-items: center;
+}
+
+
+.rating-area {
+    display: flex;
+    justify-content: space-between;
+}
+span{
+    color: rgb(0, 212, 0);
+}
+.cuisines{
+    font-weight: 500;
+    font-family: monospace;
+}
+button{
+    padding: 0 20px;
+    margin: 20px;
+    
+}
+input{
+    margin: 20px;
+    height: 30px;
+}
+
+
+.Shimmar-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12px;
+    align-items: center;
+}
+.Shimmar-ui{
+    height: 400px;
+    width: 300px;
+    background: #cbc7c7;
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.shimmar-img{
+    width:100%;
+    height: 200px;
+    /* object-fit: cover; */
+    border-radius: 15px;
+    background: #fefbfb;
+}
+
+li{
+    list-style: none;
 }
